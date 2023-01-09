@@ -26,4 +26,4 @@
 *.tsbuildinfo
 
 # ENV
-.env
+*.env
