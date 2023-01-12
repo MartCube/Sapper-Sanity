@@ -1,22 +1,21 @@
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
-	name: 'projectList',
-	title: 'List of Projects',
+	name: 'gmap',
+	title: 'Google Map',
 	type: 'object',
 	fields: [
 		defineField({
-			name: 'listOrder',
-			title: 'List Order',
+			name: 'location',
+			title: 'Map Location',
 			type: 'string',
-			validation: Rule => Rule.required(),
-			initialValue: "_createdAt",
+			validation: Rule => Rule.required()
 		})
 	],
 	preview: {
 		prepare() {
 			return {
-				title: 'List of Projects'
+				title: 'Google Map'
 			}
 		},
 	}

@@ -9,11 +9,15 @@ export default defineType({
 			name: 'title',
 			title: 'Meta Title',
 			type: 'string',
+			validation: Rule => Rule.required(),
+			initialValue: 'Meta Title'
 		}),
 		defineField({
 			name: 'description',
 			title: 'Meta Description',
-			type: 'text',
+			type: 'string',
+			validation: Rule => Rule.required(),
+			initialValue: 'Meta Description'
 		}),
 		defineField({
 			name: 'image',
@@ -22,6 +26,7 @@ export default defineType({
 			options: {
 				hotspot: true,
 			},
+			validation: Rule => Rule.required(),
 		}),
 	],
 	preview: {

@@ -53,11 +53,11 @@ export default defineType({
 			type: 'image',
 			options: { hotspot: true },
 		}),
-		defineArrayMember({
-			type: 'gallery',
-		}),
-		defineArrayMember({
-			type: 'youtube',
-		}),
+		// defineArrayMember({
+		// 	type: 'gallery',
+		// }),
+		// defineArrayMember({
+		// 	type: 'youtube',
+		// }),
 	],
 })

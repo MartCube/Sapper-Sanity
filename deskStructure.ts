@@ -1,16 +1,20 @@
 import { StructureBuilder } from 'sanity/desk'
+import { RiListSettingsLine } from 'react-icons/ri'
+
+
 
 export const structure = (S: StructureBuilder) => S.list()
 	.title('Content')
 	.items([
 		S.listItem()
-			.title('Home Page')
+			.title('App')
+			.icon(RiListSettingsLine)
 			.child(
 				S.document()
-					.schemaType('homePage')
-					.documentId('homePage')
+					.schemaType('app')
+					.documentId('app')
 			),
 		...S.documentTypeListItems().filter(
-			listItem => !['homePage', 'media.tag'].includes(listItem.getId() ?? '')
+			listItem => !['app', 'media.tag'].includes(listItem.getId() ?? '')
 		)
 	])

@@ -1,21 +1,46 @@
 import { defineArrayMember, defineType } from 'sanity'
 
+
 export default defineType({
 	name: 'pageContent',
 	title: 'Page Content',
 	type: 'array',
 	of: [
 		defineArrayMember({
-			type: 'projectList',
+			type: 'pageIntro',
+		}),
+		defineArrayMember({
+			type: 'slider',
+		}),
+		defineArrayMember({
+			type: 'homeInfo',
+		}),
+		defineArrayMember({
+			type: 'articleSlider',
+		}),
+		defineArrayMember({
+			type: 'achivments',
+		}),
+		defineArrayMember({
+			type: 'partners',
+		}),
+		defineArrayMember({
+			type: 'testimonials',
+		}),
+		defineArrayMember({
+			type: 'services',
+		}),
+		defineArrayMember({
+			type: 'gmap',
 		}),
 		defineArrayMember({
 			type: 'contactForm',
 		}),
 		defineArrayMember({
-			type: 'blog',
+			type: 'contactInfo',
 		}),
 		defineArrayMember({
-			type: 'about',
+			type: 'blog',
 		}),
 	],
 })
