@@ -11,7 +11,8 @@ export default defineType({
 			type: 'array',
 			of: [
 				defineArrayMember({
-					name: 'item',
+					title: 'Achivment',
+					name: 'achivment',
 					type: 'object',
 					fields: [
 						defineField({
@@ -20,9 +21,10 @@ export default defineType({
 							type: 'string',
 						}),
 						defineField({
-							name: 'image',
-							title: 'Image',
-							type: 'image',
+							name: 'icon',
+							title: 'Icon Name',
+							type: 'string',
+							description: 'https://icones.js.org/collection/ri',
 						}),
 						defineField({
 							name: 'number',
@@ -37,7 +39,7 @@ export default defineType({
 	preview: {
 		prepare() {
 			return {
-				title: 'Achivments'
+				title: 'Achivments',
 			}
 		},
 	}

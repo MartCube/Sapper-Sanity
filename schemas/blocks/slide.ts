@@ -19,12 +19,13 @@ export default defineType({
 	],
 	preview: {
 		select: {
+			title: 'title',
 			image: 'image.asset'
 		},
 		prepare(selection) {
-			const { image } = selection
+			const { title, image } = selection
 			return {
-				title: 'Slide',
+				title: `${title}`,
 				media: image
 			}
 		},

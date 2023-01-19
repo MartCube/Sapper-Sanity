@@ -66,7 +66,8 @@ export default defineType({
 							weak: true,
 							to: [{ type: 'page' }],
 							options: {
-								filter: '__i18n_lang == $lang',
+								disableNew: true,
+								filter: '__i18n_lang == $lang ',
 								filterParams: { lang: 'ua' }
 							}
 						}),
