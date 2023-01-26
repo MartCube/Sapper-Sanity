@@ -33,7 +33,7 @@ export default defineType({
 			name: 'uid',
 			title: 'UID',
 			type: 'slug',
-			options: { source: 'title', },
+			options: { source: 'title' },
 			group: 'article',
 		}),
 		defineField({
@@ -43,6 +43,12 @@ export default defineType({
 			options: {
 				hotspot: true,
 			},
+			group: 'article',
+		}),
+		defineField({
+			name: 'description',
+			title: 'Description',
+			type: 'text',
 			group: 'article',
 		}),
 		defineField({

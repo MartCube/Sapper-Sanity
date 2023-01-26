@@ -4,6 +4,8 @@ import homeInfo from './blocks/homeInfo'
 import articleSlider from './blocks/articleSlider'
 import achivments from './blocks/achivments'
 import partners from './blocks/partners'
+import richtext from './blocks/richtext'
+import richtextImage from './blocks/richtextImage'
 import testimonials from './blocks/testimonials'
 import services from './blocks/services'
 import contactForm from './blocks/contactForm'
@@ -34,6 +36,8 @@ export const schemaTypes = [
 	achivments,
 	partners,
 	testimonials,
+	richtext,
+	richtextImage,
 	services,
 	contactForm,
 	gmap,

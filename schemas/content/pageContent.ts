@@ -42,5 +42,13 @@ export default defineType({
 		defineArrayMember({
 			type: 'blog',
 		}),
+		defineArrayMember({
+			title: 'Richtext',
+			type: 'richtext',
+		}),
+		defineArrayMember({
+			title: 'Richtext Image',
+			type: 'richtextImage',
+		}),
 	],
 })

@@ -1,4 +1,4 @@
-import { defineField, defineType, SlugInput } from 'sanity'
+import { defineArrayMember, defineField, defineType, SlugInput } from 'sanity'
 import { RiPagesLine } from 'react-icons/ri'
 
 export default defineType({
@@ -28,6 +28,25 @@ export default defineType({
 			title: 'Title',
 			type: 'string',
 			group: 'page',
+		}),
+		defineField({
+			name: 'dropdown',
+			title: 'Dropdown links',
+			type: 'array',
+			group: 'page',
+			description: 'Links that appears in dropdown',
+			of: [
+				defineArrayMember({
+					name: 'link',
+					title: 'Page link',
+					type: 'reference',
+					weak: true,
+					to: [{type: 'page'}],
+					options: {
+						disableNew: true
+					},
+				}),
+			]
 		}),
 		defineField({
 			name: 'uid',

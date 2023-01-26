@@ -7,18 +7,66 @@ export default defineType({
 	fields: [
 		defineField({
 			name: 'phone',
-			title: 'Phone Number',
-			type: 'string',
+			type: 'object',
+			fields: [
+				defineField({
+					name: 'value',
+					title: 'Value',
+					type: 'string',
+				}),
+				defineField({
+					name: 'title',
+					title: 'Title',
+					type: 'string',
+				}),
+				defineField({
+					name: 'icon',
+					title: 'Icon',
+					type: 'string',
+				}),
+			]
 		}),
 		defineField({
 			name: 'email',
-			title: 'Email Adress',
-			type: 'string',
+			type: 'object',
+			fields: [
+				defineField({
+					name: 'value',
+					title: 'Value',
+					type: 'string',
+				}),
+				defineField({
+					name: 'title',
+					title: 'Title',
+					type: 'string',
+				}),
+				defineField({
+					name: 'icon',
+					title: 'Icon',
+					type: 'string',
+				}),
+			]
 		}),
 		defineField({
-			name: 'adress',
-			title: 'Street Adress',
-			type: 'string',
+			name: 'address',
+			type: 'object',
+			fields: [
+				defineField({
+					name: 'value',
+					title: 'Value',
+					type: 'string',
+				}),
+				defineField({
+					name: 'title',
+					title: 'Title',
+					type: 'string',
+				}),
+				defineField({
+					name: 'icon',
+					title: 'Icon',
+					type: 'string',
+				}),
+			]
 		}),
 	],
 	preview: {
