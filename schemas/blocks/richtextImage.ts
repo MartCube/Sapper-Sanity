@@ -62,7 +62,7 @@ export default defineType({
 	preview: {
 		prepare() {
 			return {
-				title: 'Richtext'
+				title: 'Richtext Image'
 			}
 		},
 	}

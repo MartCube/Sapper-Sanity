@@ -1,8 +1,8 @@
 import { defineField, defineArrayMember, defineType } from 'sanity'
 
 export default defineType({
-	name: 'slider',
-	title: 'slider',
+	name: 'homeSlider',
+	title: 'Home Slider',
 	type: 'object',
 	fields: [
 		defineField({
@@ -20,7 +20,7 @@ export default defineType({
 	preview: {
 		prepare() {
 			return {
-				title: 'slider'
+				title: 'Home Slider'
 			}
 		},
 	}

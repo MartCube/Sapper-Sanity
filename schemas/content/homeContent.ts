@@ -2,15 +2,21 @@ import { defineArrayMember, defineType } from 'sanity'
 
 
 export default defineType({
-	name: 'pageContent',
-	title: 'Page Content',
+	name: 'homeContent',
+	title: 'Home Content',
 	type: 'array',
 	of: [
 		defineArrayMember({
-			type: 'pageIntro',
+			type: 'homeSlider',
+		}),
+		defineArrayMember({
+			type: 'slider',
 		}),
 		defineArrayMember({
 			type: 'latestArticles',
+		}),
+		defineArrayMember({
+			type: 'counter',
 		}),
 		defineArrayMember({
 			type: 'achivments',
@@ -23,18 +29,6 @@ export default defineType({
 		}),
 		defineArrayMember({
 			type: 'services',
-		}),
-		defineArrayMember({
-			type: 'gmap',
-		}),
-		defineArrayMember({
-			type: 'contactForm',
-		}),
-		defineArrayMember({
-			type: 'contactInfo',
-		}),
-		defineArrayMember({
-			type: 'blog',
 		}),
 		defineArrayMember({
 			title: 'Richtext',

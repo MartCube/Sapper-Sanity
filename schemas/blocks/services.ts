@@ -6,6 +6,11 @@ export default defineType({
 	type: 'object',
 	fields: [
 		defineField({
+			name: 'title',
+			title: 'Title',
+			type: 'string',
+		}),
+		defineField({
 			name: 'list',
 			title: 'Info List',
 			type: 'array',
@@ -19,13 +24,14 @@ export default defineType({
 							type: 'string',
 						}),
 						defineField({
-							name: 'image',
-							title: 'Image',
-							type: 'image',
+							name: 'icon',
+							title: 'Icon Name',
+							type: 'string',
+							description: 'https://icones.js.org/collection/ri',
 						}),
 						defineField({
 							name: 'description',
-							title: 'Description',
+							title: 'Decription',
 							type: 'text',
 						})
 					]

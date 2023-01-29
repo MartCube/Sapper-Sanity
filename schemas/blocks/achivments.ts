@@ -27,9 +27,9 @@ export default defineType({
 							description: 'https://icones.js.org/collection/ri',
 						}),
 						defineField({
-							name: 'number',
-							title: 'Number',
-							type: 'number',
+							name: 'description',
+							title: 'Decription',
+							type: 'text',
 						})
 					]
 				}),

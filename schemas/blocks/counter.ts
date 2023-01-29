@@ -1,21 +1,18 @@
 import { defineField, defineArrayMember, defineType } from 'sanity'
 
 export default defineType({
-	name: 'testimonials',
-	title: 'Testimonials',
+	name: 'counter',
+	title: 'Counter',
 	type: 'object',
 	fields: [
-		defineField({
-			name: 'title',
-			title: 'Title',
-			type: 'string',
-		}),
 		defineField({
 			name: 'list',
 			title: 'Info List',
 			type: 'array',
 			of: [
 				defineArrayMember({
+					title: 'item',
+					name: 'Item',
 					type: 'object',
 					fields: [
 						defineField({
@@ -30,9 +27,9 @@ export default defineType({
 							description: 'https://icones.js.org/collection/ri',
 						}),
 						defineField({
-							name: 'description',
-							title: 'Decription',
-							type: 'text',
+							name: 'number',
+							title: 'Number',
+							type: 'number',
 						})
 					]
 				}),
@@ -42,10 +39,8 @@ export default defineType({
 	preview: {
 		prepare() {
 			return {
-				title: "Testimonials"
+				title: 'Counter',
 			}
 		},
 	}
-
 })
-
