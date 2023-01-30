@@ -33,6 +33,22 @@ export default defineType({
 							name: 'description',
 							title: 'Decription',
 							type: 'text',
+						}),
+						defineField({
+							name: 'link',
+							title: 'Page link',
+							type: 'reference',
+							weak: true,
+							to: [{type: 'page'}],
+							options: {
+								disableNew: true
+							},
+						}),
+						defineField({
+							name: 'image',
+							title: 'Image',
+							type: 'image',
+							options: { hotspot: true },
 						})
 					]
 				}),
