@@ -17,7 +17,8 @@ export default defineType({
 		// as a block type.
 		defineArrayMember({
 			type: 'image',
-			options: { hotspot: true },
+			name: 'image',
+			title: "Single Image"
 		}),
 		// defineArrayMember({
 		// 	type: 'gallery',

@@ -22,6 +22,11 @@ export default defineType({
 			type: 'testimonials',
 		}),
 		defineArrayMember({
+			type: 'image',
+			name: 'image',
+			title: "Single Image"
+		}),
+		defineArrayMember({
 			type: 'services',
 		}),
 		defineArrayMember({
@@ -32,6 +37,12 @@ export default defineType({
 		}),
 		defineArrayMember({
 			type: 'contactInfo',
+		}),
+		defineArrayMember({
+			type: 'gallery',
+		}),
+		defineArrayMember({
+			type: 'youtubeGallery',
 		}),
 		defineArrayMember({
 			type: 'blog',

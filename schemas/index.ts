@@ -2,6 +2,9 @@
 import homeSlider from './blocks/homeSlider'
 import slider from './blocks/slider'
 import homeInfo from './blocks/homeInfo'
+import gallery from './blocks/gallery'
+import youtubeGallery from './blocks/youtubeGallery'
+import youtube from './blocks/youtube'
 import latestArticles from './blocks/latestArticles'
 import achivments from './blocks/achivments'
 import partners from './blocks/partners'
@@ -44,6 +47,9 @@ export const schemaTypes = [
 	testimonials,
 	richtext,
 	richtextImage,
+	youtubeGallery,
+	gallery,
+	youtube,
 	services,
 	contactForm,
 	gmap,
