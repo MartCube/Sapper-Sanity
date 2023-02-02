@@ -45,7 +45,7 @@ export default defineType({
 			type: 'youtubeGallery',
 		}),
 		defineArrayMember({
-			type: 'blog',
+			type: 'articleList',
 		}),
 		defineArrayMember({
 			title: 'Richtext',

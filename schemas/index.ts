@@ -6,6 +6,7 @@ import gallery from './blocks/gallery'
 import youtubeGallery from './blocks/youtubeGallery'
 import youtube from './blocks/youtube'
 import latestArticles from './blocks/latestArticles'
+import articleList from './blocks/articleList'
 import achivments from './blocks/achivments'
 import partners from './blocks/partners'
 import richtext from './blocks/richtext'
@@ -16,7 +17,6 @@ import contactForm from './blocks/contactForm'
 import gmap from './blocks/gmap'
 import contactInfo from './blocks/contactInfo'
 import pageIntro from './blocks/pageIntro'
-import blog from './blocks/blog'
 import counter from './blocks/counter'
 import slide from './blocks/slide'
 
@@ -42,6 +42,7 @@ export const schemaTypes = [
 	counter,
 	homeInfo,
 	latestArticles,
+	articleList,
 	achivments,
 	partners,
 	testimonials,
@@ -57,7 +58,6 @@ export const schemaTypes = [
 	sitemap,
 	contactInfo,
 	pageIntro,
-	blog,
 
 
 	articleContent,

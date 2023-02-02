@@ -1,23 +1,21 @@
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
-	name: 'blog',
-	title: 'Blog',
+	name: 'articleList',
+	title: 'List of articles',
 	type: 'object',
 	fields: [
 		defineField({
-			name: 'pagination',
-			title: 'Pagination',
-			type: 'boolean',
+			name: 'title',
+			title: 'Article list title',
+			type: 'string',
 			validation: Rule => Rule.required(),
-			initialValue: true,
-		}),
-
+		})
 	],
 	preview: {
 		prepare() {
 			return {
-				title: 'Blog'
+				title: 'List of articles'
 			}
 		},
 	}
