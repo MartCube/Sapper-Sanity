@@ -48,6 +48,9 @@ export default defineType({
 			type: 'articleList',
 		}),
 		defineArrayMember({
+			type: 'richtextForm',
+		}),
+		defineArrayMember({
 			title: 'Richtext',
 			type: 'richtext',
 		}),

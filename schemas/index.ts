@@ -11,6 +11,7 @@ import achivments from './blocks/achivments'
 import partners from './blocks/partners'
 import richtext from './blocks/richtext'
 import richtextImage from './blocks/richtextImage'
+import richtextForm from './blocks/richtextForm'
 import testimonials from './blocks/testimonials'
 import services from './blocks/services'
 import contactForm from './blocks/contactForm'
@@ -43,6 +44,7 @@ export const schemaTypes = [
 	homeInfo,
 	latestArticles,
 	articleList,
+	richtextForm,
 	achivments,
 	partners,
 	testimonials,

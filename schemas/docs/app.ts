@@ -47,6 +47,11 @@ export default defineType({
 					title: 'Instagram link',
 					type: 'url',
 				}),
+				defineField({
+					name: 'youtube',
+					title: 'Youtube link',
+					type: 'url',
+				}),
 			]
 		}),
 		defineField({
