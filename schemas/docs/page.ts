@@ -29,24 +29,37 @@ export default defineType({
 			type: 'string',
 			group: 'page',
 		}),
+
 		defineField({
 			name: 'dropdown',
-			title: 'Dropdown links',
-			type: 'array',
+			title: 'Dropdown',
+			type: 'object',
 			group: 'page',
-			description: 'Links that appears in dropdown',
-			of: [
-				defineArrayMember({
-					name: 'link',
-					title: 'Page link',
-					type: 'reference',
-					weak: true,
-					to: [{type: 'page'}],
-					options: {
-						disableNew: true
-					},
+			fields:[
+				defineField({
+					name: 'title',
+					title: 'Title',
+					type: 'string',
 				}),
-			]
+				defineField({
+					name: 'sublinks',
+					title: 'Links',
+					type: 'array',
+					description: 'Links that appears in dropdown',
+					of: [
+						defineArrayMember({
+							name: 'link',
+							title: 'Page link',
+							type: 'reference',
+							weak: true,
+							to: [{type: 'page'}],
+							options: {
+								disableNew: true
+							},
+						}),
+					]
+				}),
+			],
 		}),
 		defineField({
 			name: 'uid',

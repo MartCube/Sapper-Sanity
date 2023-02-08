@@ -12,6 +12,7 @@ import partners from './blocks/partners'
 import richtext from './blocks/richtext'
 import richtextImage from './blocks/richtextImage'
 import richtextForm from './blocks/richtextForm'
+import inputField from './blocks/inputField'
 import testimonials from './blocks/testimonials'
 import services from './blocks/services'
 import contactForm from './blocks/contactForm'
@@ -42,6 +43,7 @@ export const schemaTypes = [
 	slide,
 	counter,
 	homeInfo,
+	inputField,
 	latestArticles,
 	articleList,
 	richtextForm,

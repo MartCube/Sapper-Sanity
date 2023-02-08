@@ -4,36 +4,28 @@ export default defineType({
 	name: 'contactForm',
 	title: 'Contact Form',
 	type: 'object',
-	fields: [
-		defineField({
-			name: 'name',
-			title: 'Full Name',
-			type: 'string',
-			validation: Rule => Rule.required(),
-			initialValue: "Full Name",
-		}),
-		defineField({
-			name: 'email',
-			title: 'Email Adress',
-			type: 'string',
-			validation: Rule => Rule.required(),
-			initialValue: "Email Adress",
-		}),
-		defineField({
-			name: 'phone',
-			title: 'Phone Number',
-			type: 'string',
-			validation: Rule => Rule.required(),
-			initialValue: "Phone Number",
-		}),
-		defineField({
-			name: 'message',
-			title: 'Your Message',
-			type: 'string',
-			validation: Rule => Rule.required(),
-			initialValue: "Your Message",
-		}),
-	],
+	fields:[
+				defineField({
+          name: 'name',
+          title: 'Name',
+          type: 'inputField',
+        }),
+        defineField({
+          name: 'phone',
+          title: 'Phone',
+          type: 'inputField',
+        }),
+        defineField({
+          name: 'email',
+          title: 'Email',
+          type: 'inputField',
+        }),
+        defineField({
+          name: 'message',
+          title: 'Message',
+          type: 'inputField',
+        }),
+			],
 	preview: {
 		prepare() {
 			return {
