@@ -38,5 +38,9 @@ export default defineType({
 			title: 'Richtext Image',
 			type: 'richtextImage',
 		}),
+		defineArrayMember({
+			title: 'Youtube Slider',
+			type: 'youtubeSlider',
+		}),
 	],
 })

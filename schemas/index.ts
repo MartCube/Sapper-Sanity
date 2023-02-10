@@ -21,6 +21,7 @@ import contactInfo from './blocks/contactInfo'
 import pageIntro from './blocks/pageIntro'
 import counter from './blocks/counter'
 import slide from './blocks/slide'
+import youtubeSlider from './blocks/youtubeSlider'
 
 import metaTags from './blocks/metaTags'
 import sitemap from './blocks/sitemap'
@@ -42,6 +43,7 @@ export const schemaTypes = [
 	slider,
 	slide,
 	counter,
+	youtubeSlider,
 	homeInfo,
 	inputField,
 	latestArticles,
