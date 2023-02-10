@@ -45,6 +45,9 @@ export default defineType({
 			type: 'youtubeGallery',
 		}),
 		defineArrayMember({
+			type: 'cta',
+		}),
+		defineArrayMember({
 			type: 'articleList',
 		}),
 		defineArrayMember({

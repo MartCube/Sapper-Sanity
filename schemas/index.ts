@@ -21,6 +21,7 @@ import contactInfo from './blocks/contactInfo'
 import pageIntro from './blocks/pageIntro'
 import counter from './blocks/counter'
 import slide from './blocks/slide'
+import Cta from './blocks/Cta'
 import youtubeSlider from './blocks/youtubeSlider'
 
 import metaTags from './blocks/metaTags'
@@ -47,6 +48,7 @@ export const schemaTypes = [
 	homeInfo,
 	inputField,
 	latestArticles,
+	Cta,
 	articleList,
 	richtextForm,
 	achivments,
