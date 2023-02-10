@@ -9,25 +9,7 @@ export default defineType({
 			name: 'title',
 			title: 'Title',
 			type: 'string',
-		}),
-		defineField({
-			name: 'lastnews',
-			title: 'Latest Articles',
-			type: 'array',
-			description: 'Links that appears in dropdown',
-			of: [
-				defineArrayMember({
-					name: 'link',
-					title: 'Page link',
-					type: 'reference',
-					weak: true,
-					to: [{type: 'article'}],
-					options: {
-						disableNew: true
-					},
-				}),
-			]
-		}),
+		})
 	],
 	preview: {
 		prepare() {
