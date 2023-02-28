@@ -12,8 +12,8 @@ export default defineConfig({
 	name: 'default',
 	title: 'Sapper',
 
-	projectId: import.meta.env.SANITY_STUDIO_PROJECT_ID,
-	dataset: import.meta.env.SANITY_STUDIO_DATASET,
+	projectId: 'ede4uk6z',
+	dataset: 'production',
 
 	plugins: withDocumentI18nPlugin(() => ([
 		deskTool({ structure: structure }),
