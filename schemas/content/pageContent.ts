@@ -13,6 +13,9 @@ export default defineType({
 			type: 'latestArticles',
 		}),
 		defineArrayMember({
+			type: 'infoList',
+		}),
+		defineArrayMember({
 			type: 'achivments',
 		}),
 		defineArrayMember({

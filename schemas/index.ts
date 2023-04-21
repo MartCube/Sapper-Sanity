@@ -7,6 +7,7 @@ import youtubeGallery from './blocks/youtubeGallery'
 import youtube from './blocks/youtube'
 import latestArticles from './blocks/latestArticles'
 import articleList from './blocks/articleList'
+import infoList from './blocks/infoList'
 import achivments from './blocks/achivments'
 import partners from './blocks/partners'
 import richtext from './blocks/richtext'
@@ -30,11 +31,13 @@ import sitemap from './blocks/sitemap'
 
 // content
 import articleContent from './content/articleContent'
+import infoContent from './content/infoContent'
 import pageContent from './content/pageContent'
 import homeContent from './content/homeContent'
 // docs
 import app from './docs/app'
 import article from './docs/article'
+import info from './docs/info'
 import page from './docs/page'
 import home from './docs/home'
 
@@ -50,6 +53,7 @@ export const schemaTypes = [
 	latestArticles,
 	cta,
 	articleList,
+	infoList,
 	richtextForm,
 	achivments,
 	partners,
@@ -69,10 +73,12 @@ export const schemaTypes = [
 
 
 	articleContent,
+	infoContent,
 	pageContent,
 	homeContent,
 
 	article,
+	info,
 	home,
 	page,
 	app,
