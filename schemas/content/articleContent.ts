@@ -24,9 +24,9 @@ export default defineType({
 			name: 'image',
 			title: "Single Image"
 		}),
-		// defineArrayMember({
-		// 	type: 'gallery',
-		// }),
+		defineArrayMember({
+			type: 'cta',
+		}),
 		// defineArrayMember({
 		// 	type: 'youtube',
 		// }),
