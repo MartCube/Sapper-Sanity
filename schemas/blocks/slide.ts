@@ -25,7 +25,13 @@ export default defineType({
 			title: 'Image',
 			type: 'image',
 			options: { hotspot: true },
-		})
+		}),
+		defineField({
+			name: 'imageMobile',
+			title: 'Image',
+			type: 'image',
+			options: { hotspot: true },
+		}),
 	],
 	preview: {
 		select: {

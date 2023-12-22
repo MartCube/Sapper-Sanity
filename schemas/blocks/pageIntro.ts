@@ -10,7 +10,22 @@ export default defineType({
 			title: 'Page Title',
 			type: 'string',
 			validation: Rule => Rule.required(),
-		})
+		}),
+		defineField({
+			name: 'image',
+			title: 'Image',
+			type: 'image',
+			options: {
+				hotspot: true
+			},
+			fields: [
+				defineField({
+					name: 'alt',
+					title: 'Alt',
+					type: 'string',
+				}),
+			],
+		}),
 	],
 	preview: {
 		prepare() {
